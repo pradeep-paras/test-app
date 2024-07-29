@@ -1,0 +1,429 @@
+@font-face {
+    font-family: 'custom1';
+    src: url('./fonts/desktop/custom1.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'custom13';
+    src: url('./fonts/desktop/custom13.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'custom15';
+    src: url('./fonts/desktop/custom15.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'custom7';
+    src: url('./fonts/desktop/custom7.otf') format('opentype');
+}
+
+.root_div {
+    background-color: #e9e9e9;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.signup_div {
+    /* height: 750px; */
+    background-color: white;
+    margin: 100px 90px 100px 90px;
+    border-radius: 50px;
+    padding-left: 95px;
+    padding-right: 95px;
+    padding-bottom: 60px;
+}
+
+.logo {
+    margin-top: 70px;
+    width: 110px;
+    height: 55px;
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.signup_box {
+    display: flex;
+    margin-top: 110px;
+}
+
+.step_text {
+    font-family: 'custom1';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: left;
+}
+
+.text_box {
+    width: 45%;
+}
+
+.message {
+    display: inline-block;
+    font-family: 'custom13';
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 55px;
+    text-align: left;
+}
+
+.text {
+    font-family: 'custom1';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 50px;
+    text-align: left;
+}
+
+.form_div {
+    width: 50%;
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    padding-left: 50px;
+    align-items: flex-end;
+}
+
+.email {
+    width: 85%;
+    height: 94px;
+    outline: 15px;
+    border-width: 1px;
+    font-family: 'custom13';
+    padding-left: 25px;
+    font-weight: 500;
+    padding-right: 25px;
+    border-color: #00000066;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.mobile {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobile p {
+    font-family: 'custom1';
+    font-size: 10px;
+    text-decoration: underline;
+    color: #000000bd;;
+}
+
+.button {
+    background-color: black;
+    width: 28%;
+    font-size: 15px;
+    margin-top: 25px;
+    height: 50px;
+    border-radius: 4px;
+    color: white;
+    font-family: 'custom13';
+}
+
+/* password */
+.form_div1 {
+    width: 50%;
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    padding-left: 50px;
+}
+
+.label {
+    font-family: 'custom15';
+    /* font-size: 24px; */
+    font-weight: 400;
+    line-height: 47px;
+    text-align: left;
+}
+
+.input_container {
+    position: relative;
+    display: inline-block;
+}
+
+.input_container img {
+    position: absolute;
+    right: 9%;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px; /* Adjust font size as needed */
+    padding: 0; /* Remove button padding */
+}
+
+.button_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 96%;
+}
+
+.button_box span {
+    font-family: 'custom7';
+    font-size: 13px;
+    line-height: 30px;
+    text-align: left;
+    width: 63%;
+}
+
+.password_button {
+    width: 36%;
+    background-color: black;
+    font-size: 15px;
+    margin-top: 25px;
+    height: 50px;
+    border-radius: 4px;
+    color: white;
+    font-family: 'custom13';
+}
+
+.paragraph {
+    font-family: 'custom7';
+    font-size: 11px;
+    font-weight: 300;
+    line-height: 25px;
+    text-align: left;
+}
+
+
+/* Responsive pages */
+
+@media screen and (max-width: 1316px) {
+    .step_text {
+        font-size: 20px;
+    }
+
+    .message {
+        font-size: 38px;
+    }
+
+    .text {
+        font-size: 18px;
+    }
+
+    .email {
+        height: 75px;
+        font-size: 16px;
+    }
+
+    .button_box span {
+        font-size: 11px;
+        line-height: 20px;
+    }
+}
+
+@media screen and (max-width: 1166px) {
+    .password_button {
+        font-size: 13px;
+    }
+
+    .paragraph {
+        margin-top: 40px;
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .signup_div {
+        /* height: 750px; */
+        /* background-color: blue; */
+        margin: 80px 50px 80px 50px;
+        padding-left: 55px;
+        padding-right: 55px;
+        padding-bottom: 60px;
+    }
+    
+    .step_text {
+        font-size: 20px;
+    }
+
+    .message {
+        font-size: 38px;
+    }
+
+    .text {
+        font-size: 18px;    
+    }
+
+    .email {
+        height: 75px;
+        font-size: 16px;
+    }
+
+    .button {
+        font-size: 14px;
+        height: 40px;
+    }
+
+    .label {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width: 968px) {
+    .logo {
+        width: 90px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 968px) {
+    .message {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .text {
+        font-size: 14px;  
+        line-height: 35px;  
+    }
+
+    .email {
+        height: 55px;
+        font-size: 16px;
+    }
+
+    .button {
+        font-size: 14px;
+        height: 40px;
+    }
+    
+    .button_box {
+        width: 99%;
+    }
+
+    .password_button {
+        font-size: 11px;
+        height: 40px;
+    }
+
+    .paragraph {
+        font-size: 10px;
+        line-height: 16px;
+    }
+}
+
+@media screen and (max-width: 818px) {
+    .message {
+        font-size: 24px;
+        line-height: 30px;
+    }
+    
+    .text {
+        font-size: 12px;
+        line-height: 22px;  
+    }
+
+    .email {
+        height: 45px;
+        font-size: 14px;
+    }
+
+    .button {
+        font-size: 11px;
+        margin-top: 15px;
+        height: 35px;
+    }
+
+    .label {
+        line-height: 30px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 707px) {
+    .signup_box {
+        display: flex;
+        margin-top: 165px;
+        flex-direction: column;
+    }
+
+    .signup_div {
+        /* height: 750px; */
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+
+    .text_box {
+        width: 85%;
+    }
+
+    .form_div {
+        width: 100%;
+        display: flex;
+        margin-top: 30px;
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    .email {
+        width: -webkit-fill-available;
+    }
+    
+    .form_div1 {
+        width: 100%;
+        padding-left: 0px;
+    }
+
+    .mobile {
+        margin-top: 20px;
+    }
+
+    .button {
+        margin: 0px
+    }
+
+    .paragraph {
+        font-size: 9px;
+        line-height: 14px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .button_box {
+        width: 100%;
+    }
+
+    .button_box span {
+        line-height: 15px;
+    }
+
+    .button_box {
+        margin-top: 5px;
+    }
+
+    .password_button {
+        font-size: 10px;
+        margin-top: 0px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .signup_div {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .step_text {
+        font-size: 15px;
+    }
+    
+    .message {
+        font-size: 20px;
+    }
+    
+    .text {
+        font-size: 10px;
+    }
+}

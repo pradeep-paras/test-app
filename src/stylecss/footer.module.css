@@ -1,0 +1,143 @@
+@font-face {
+    font-family: 'custom13';
+    src: url('./fonts/desktop/custom13.otf') format('opentype');
+}
+
+.footer_main {
+    background-color: black;
+    padding: 110px 190px 110px 190px;
+}
+
+.icons {
+    margin-left: 20px;
+    width: 32px;
+    margin-right: 25px;
+}
+
+.icons:hover {
+    cursor: pointer;
+    filter: brightness(0.5)
+}
+
+.list_div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.list {
+    color: white;
+    display: flex;
+    list-style: none;
+    margin-top: 2px;
+    padding-left: 25px;
+}
+
+.list li {
+    font-size: 14px;
+    font-family: 'custom13';
+    margin-right: 100px;
+    transition: 'text-decoration';
+}
+
+.list li:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    transform: scale(100%);
+}
+
+.copyright {
+    width: 100%;
+    font-size: 13px;
+    color: #ffffff7a;
+    padding-bottom: -42px;
+    margin-top: 70px;
+    margin-bottom: -60px;
+    font-weight: 100;
+    padding-left: 25px;
+}
+
+.copyright span {
+    color: white;
+    font-family: 'custom13';
+}
+
+@media screen and (max-width: 1225px) {
+    .footer_main {
+        padding-left: 130px;
+        padding-right: 130px;
+    }
+
+    
+}
+
+@media screen and (max-width: 1103px) {
+    .footer_main {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .list li {
+        margin-right: 70px;
+    }
+}
+
+@media screen and (max-width: 925px) {
+    .footer_main {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+
+    .list li {
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width: 707px) {
+    .icons {
+        width: 24px;
+        margin-right: 0px;
+    }
+    
+    .list_div {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+    }
+
+    .list {
+        display: flex;
+        flex-direction: column;
+        line-height: 25px;
+        padding-left: 25px;
+    }
+}
+
+@media screen and (max-width: 630px) {
+    .list_div {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    .icons {
+        width: 22px;
+        margin-right: 0px;
+    }
+
+    .list li {
+        margin-right: 5px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* margin-right: 10px; */
+
+    .list li {
+        font-size: 10px;
+        line-height: 18px;
+    }
+}
+
